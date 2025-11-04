@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KillSequence</class>
+ <widget class="QDialog" name="KillSequence">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>524</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+     border: 1px solid;
+	border-color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+QGroupBox::title {
+    color: #fff;
+	background-color: #0C5776;
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 10px 8000px 10px 8000px;
+}</string>
+     </property>
+     <property name="title">
+      <string>Table Kill Sequence</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+      <property name="topMargin">
+       <number>40</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_45" native="true">
+        <property name="styleSheet">
+         <string notr="true">QWidget
+{
+border: 1px solid;
+border-color: rgb(197, 197, 197);
+	background-color: rgb(255, 255, 255);
+}QWidget
+{
+     border: 0px solid;
+}
+
+
+</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_13">
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="well_2">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>B1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QCheckBox" name="well_18">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>B3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QCheckBox" name="well_11">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>C2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QCheckBox" name="well_21">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>E3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QCheckBox" name="well_10">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>B2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="2">
+          <widget class="QCheckBox" name="well_23">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>G3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QCheckBox" name="well_19">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>C3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QCheckBox" name="well_5">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>E1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QCheckBox" name="well_9">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>A2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QCheckBox" name="well_6">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>F1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="2">
+          <widget class="QCheckBox" name="well_24">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>H3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QCheckBox" name="well_20">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>D3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QCheckBox" name="well_3">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>C1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="well_1">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>A1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QCheckBox" name="well_13">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>E2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QCheckBox" name="well_4">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>D1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QCheckBox" name="well_12">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>D2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QCheckBox" name="well_8">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>H1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QCheckBox" name="well_7">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}QCheckBox
+{
+     border: 0px solid;
+}
+
+
+</string>
+           </property>
+           <property name="text">
+            <string>G1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QCheckBox" name="well_16">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>G2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QCheckBox" name="well_15">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>G2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QCheckBox" name="well_22">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>F3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QCheckBox" name="well_14">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>F2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QCheckBox" name="well_17">
+           <property name="styleSheet">
+            <string notr="true">QCheckBox
+{
+     border: 0px solid;
+}
+
+
+QCheckBox {
+ 	 spacing: 5px;
+     border: 0px solid;
+}
+
+
+QCheckBox:checked {
+	background-color: red;
+
+}
+
+QCheckBox::indicator:unchecked {
+background-color: white;
+  image: url(:/image/feather_2px_black/square.svg);
+
+}
+
+QCheckBox::indicator:checked {
+background-color: red;
+  image: url(:/image/feather_2px_black/check-square.svg);
+}
+
+
+QCheckBox::indicator {
+  width: 40px;
+  height: 40px;
+}</string>
+           </property>
+           <property name="text">
+            <string>A3</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="4,2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Tick the checkbox to select which well you want to kill</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_saveKill">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Save Kill Table</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
