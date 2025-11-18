@@ -18,24 +18,36 @@
 #include "main.h"
 #include "struct.h"
 //========================================== POSITION SYSTEM
-#define Z_POSITION_NORMAL 120
-#define Z_POSITION_CLEAN_AIR 120
+//#define Z_POSITION_NORMAL 120
+//#define Z_POSITION_CLEAN_AIR 120
+//
+////#define Z_POSITION_FILL_CHEMICAL 160
+//#define Z_POSITION_FILL_CHEMICAL 155
+//#define X_POSITION_PUSH_DOWN  1290
+//#define Y_POSITION_PUSH_DOWN  1292
+//#define Z_POSITION_PUSH_DOWN  185
+//
+//#define	X_PRIMMING_POS_1			1370
+//#define	X_PRIMMING_POS_2			1370
+//#define	Y_PRIMMING_POS				1145
+//#define Z_POSITION_PRIMMING 		110
+//========================================== 07-11-2025 update thay doi chieu cao hop
+#define Z_POSITION_NORMAL 3
+#define Z_POSITION_CLEAN_AIR 3
 
 //#define Z_POSITION_FILL_CHEMICAL 160
-#define Z_POSITION_FILL_CHEMICAL 155
+#define Z_POSITION_FILL_CHEMICAL 4
 #define X_POSITION_PUSH_DOWN  1290
 #define Y_POSITION_PUSH_DOWN  1292
-#define Z_POSITION_PUSH_DOWN  185
+#define Z_POSITION_PUSH_DOWN  25
 
 #define	X_PRIMMING_POS_1			1370
 #define	X_PRIMMING_POS_2			1370
 #define	Y_PRIMMING_POS				1145
-#define Z_POSITION_PRIMMING 		110
-
-
+#define Z_POSITION_PRIMMING 		2
 #define	X_CALIB_POS_1				((uint16_t)1280)
 #define	Y_CALIB_POS					((uint16_t)1145)
-#define Z_POSITION_CALIB 			110
+#define Z_POSITION_CALIB 			2
 void Chemical_fill_process(Global_var_t* p_global_variable, uint8_t type_sulphite, uint16_t u16_volume, uint8_t u8_pos_X,  uint8_t u8_pos_Y);
 void Valve_EnaAll();
 void Valve_DisAll();

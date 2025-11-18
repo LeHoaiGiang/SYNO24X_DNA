@@ -198,10 +198,6 @@ void setSpeed_Z(uint16_t u16_Time_HalfCLK)
 }
 bool Stepper_AutoHome_SYN024()
 {
-	//	HAL_GPIO_WritePin(Z1_ENABLE_PORT, Z1_ENABLE_Pin, RESET);
-	//	HAL_GPIO_WritePin(X_ENABLE_PORT, X_ENABLE_Pin, RESET);
-	//	HAL_GPIO_WritePin(Y_EN_GPIO_Port, Y_EN_Pin, RESET);
-
 	HAL_GPIO_WritePin(X_DIR_GPIO_Port, Stepper_X.GPIO_Pin_DIR, STEPPER_REVERSE);
 	HAL_GPIO_WritePin(Y_DIR_GPIO_Port, Stepper_Y.GPIO_Pin_DIR, STEPPER_REVERSE);
 	HAL_GPIO_WritePin(Z1_DIR_GPIO_Port, Stepper_Z1.GPIO_Pin_DIR, STEPPER_Z1_REVERSE);
@@ -289,14 +285,14 @@ bool Stepper_AutoHome_SYN024()
 		}
 		DWT_Delay_us(STEPPER_SPEED_GOTOHOME_LOW_SPEED);
 	}
-	// Z THOAT CONG TAT HANH TRINH
-	HAL_GPIO_WritePin(Z1_DIR_GPIO_Port, Stepper_Z1.GPIO_Pin_DIR, STEPPER_Z1_FORWARD);
-	while(u16_NumberStep_RunExit_SwitchHome > 0)
-	{
-		HAL_GPIO_TogglePin(Z1_STEP_GPIO_Port, Z1_STEP_Pin);
-		DWT_Delay_us(STEPPER_SPEED_GOTOHOME_LOW_SPEED);
-		u16_NumberStep_RunExit_SwitchHome --;
-	}
+	// Z THOAT CONG TAT HANH TRINH == 07-11-2025 khong cho Z ha xuong nua
+//	HAL_GPIO_WritePin(Z1_DIR_GPIO_Port, Stepper_Z1.GPIO_Pin_DIR, STEPPER_Z1_FORWARD);
+//	while(u16_NumberStep_RunExit_SwitchHome > 0)
+//	{
+//		HAL_GPIO_TogglePin(Z1_STEP_GPIO_Port, Z1_STEP_Pin);
+//		DWT_Delay_us(STEPPER_SPEED_GOTOHOME_LOW_SPEED);
+//		u16_NumberStep_RunExit_SwitchHome --;
+//	}
 	u16_NumberStep_RunExit_SwitchHome = NUMBER_STEP_PER_04mm;
 	HAL_GPIO_WritePin(X_DIR_GPIO_Port, Stepper_X.GPIO_Pin_DIR, STEPPER_FORWARD);
 	HAL_GPIO_WritePin(Y_DIR_GPIO_Port, Stepper_Y.GPIO_Pin_DIR, STEPPER_FORWARD);
@@ -309,7 +305,6 @@ bool Stepper_AutoHome_SYN024()
 	}
 	// ======================================= HOME LAN 2 == TOC DO HOME GIAM XUONG =========================================
 	DWT_Delay_ms(100); // DELAY tranh tinh trang con gia toc khi dang chay
-
 	HAL_GPIO_WritePin(X_DIR_GPIO_Port, Stepper_X.GPIO_Pin_DIR, STEPPER_REVERSE);
 	HAL_GPIO_WritePin(Y_DIR_GPIO_Port, Stepper_Y.GPIO_Pin_DIR, STEPPER_REVERSE);
 	HAL_GPIO_WritePin(Z1_DIR_GPIO_Port, Stepper_Z1.GPIO_Pin_DIR, STEPPER_Z1_REVERSE);

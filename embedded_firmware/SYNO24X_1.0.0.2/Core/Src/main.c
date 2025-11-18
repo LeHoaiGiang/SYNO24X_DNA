@@ -208,7 +208,7 @@ void CheckOutPut();
 uint8_t State_Home_Stepper_X = 0;
 uint8_t State_Home_Stepper_Y = 0;
 uint8_t State_Home_Stepper_Z1 = 0;
-#define DEBUG_SOFTWARE
+//#define DEBUG_SOFTWARE
 /* USER CODE END 0 */
 
 /**
@@ -264,6 +264,7 @@ int main(void)
 	// HAL_TIM_PWM_Start(&htim5, TIM_CHANNEL_3);
 	// HAL_TIM_Base_Start(&htim2);
 	//__HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_3, 0); // TIMER5 CHANNEL 3 timer 10khz
+	Valve_DisAll();
 	HAL_UART_Receive_DMA(&huart1, &global_variable.UART_Command.u8_Data_Rx_Buffer[0], UART_LENGTH_COMMAND);
 	global_variable.UART_Command.b_FW_Rx_Command_Flag = 0;
 	global_variable.signal_running.b_signal_update_status = 0;
@@ -373,7 +374,7 @@ int main(void)
 			}
 			case CMD_RUN2HOME:
 			{
-				Stepper_Z1_move(Z_POSITION_NORMAL);
+				//Stepper_Z1_move(Z_POSITION_NORMAL);
 #ifdef DEBUG_SOFTWARE
 
 #else
